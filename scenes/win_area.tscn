@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://cbdtrvof7ttco"]
+
+[ext_resource type="Script" path="res://win_area.gd" id="1_wkndv"]
+[ext_resource type="Texture2D" uid="uid://dyd054bq1kv4n" path="res://assets/icon.svg" id="2_e0fpl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lc7x4"]
+size = Vector2(16, 16)
+
+[node name="winArea" type="Area2D"]
+script = ExtResource("1_wkndv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_lc7x4")
+debug_color = Color(0.2873397, 0.6305966, 0, 0.41960785)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.14257813, 0.14257813)
+texture = ExtResource("2_e0fpl")
